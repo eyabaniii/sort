@@ -1,0 +1,22 @@
+ALGORITHM SORT
+VAR
+arr : ARRAY_OF FLOAT[];
+           num = arr[i];
+           i,j:INTEGER
+BEGIN
+
+
+    FOR( i := 1; i < arr.length(); i++)DO {
+  
+         j = i - 1;
+
+        while (j >= 0 && arr[j] > num) {
+            arr[j + 1] = arr[j];
+            j--;
+        }
+
+        arr[j + 1] = num;
+    }
+    END_FOR
+END
+
